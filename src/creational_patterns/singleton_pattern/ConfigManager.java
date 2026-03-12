@@ -20,4 +20,15 @@ public class ConfigManager {
         }
     }
 
+    public synchronized ConfigManager getInstance(){
+        if(instance==null){
+            return new ConfigManager();
+        }
+        return instance;
+    }
+
+    public String getProperty(String key){
+        return properties.getProperty(key);
+    }
+
 }
