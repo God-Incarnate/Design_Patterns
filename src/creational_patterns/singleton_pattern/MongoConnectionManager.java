@@ -73,5 +73,23 @@ public class MongoConnectionManager {
         System.out.println("MongoDB Client Initialized");
     }
 
+    public static synchronized MongoConnectionManager getInstance() {
+
+        if(instance == null) {
+            instance = new MongoConnectionManager();
+        }
+
+        return instance;
+    }
+
+    public MongoDatabase getDatabase() {
+
+        return mongoClient.getDatabase(DATABASE_NAME);
+    }
+
+    public MongoClient getClient() {
+        return mongoClient;
+    }
+
 
 }
