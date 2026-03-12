@@ -32,7 +32,29 @@ Usage:::::::::::::::
                     System.out.println("User inserted");
                 }
             }
+ Maven Dependency::::::::::::::::;
+<dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>mongodb-driver-sync</artifactId>
+    <version>4.11.1</version>
+</dependency>
+
+
+Application
+   │
+   ├ UserService
+   ├ OrderService
+   └ PaymentService
+        │
+        ▼
+MongoConnectionManager (Singleton)
+        │
+   MongoClient (Connection Pool)
+        │
+      MongoDB
+--------------------------------------------------------------------
  */
+
 public class MongoConnectionManager {
 
 
