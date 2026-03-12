@@ -56,6 +56,22 @@ MongoConnectionManager (Singleton)
  */
 
 public class MongoConnectionManager {
+    private static MongoConnectionManager instance;
+
+    private MongoClient mongoClient;
+
+    private static final String CONNECTION_STRING =
+            "mongodb://localhost:27017";
+
+    private static final String DATABASE_NAME =
+            "testdb";
+
+    private MongoConnectionManager() {
+
+        mongoClient = MongoClients.create(CONNECTION_STRING);
+
+        System.out.println("MongoDB Client Initialized");
+    }
 
 
 }
