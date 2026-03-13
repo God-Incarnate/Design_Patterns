@@ -47,3 +47,22 @@ public class BillPughSingleton {
         System.out.println("Bill Pugh Singleton Instance");
     }
 }
+/*
+How it Works
+
+Step-by-step:
+        ---------------------------
+        Application starts
+        SingletonHelper NOT loaded yet
+        ----------------------------
+
+When this runs:
+        ------------------------------
+        BillPughSingleton.getInstance();
+        ------------------------------
+Then:
+        --------------------------
+        SingletonHelper class loads
+        INSTANCE created
+        --------------------------
+ */
