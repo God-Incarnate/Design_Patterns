@@ -16,4 +16,28 @@ Double-checked locking synchronizes only when needed.
  */
 public class DoubleCheckedSingleton {
 
+    private static volatile DoubleCheckedSingleton instance;
+
+    private DoubleCheckedSingleton() {}
+
+    public static DoubleCheckedSingleton getInstance() {
+
+        if (instance == null) {                 // First check
+
+            synchronized (DoubleCheckedSingleton.class) {
+
+                if (instance == null) {         // Second check
+                    instance = new DoubleCheckedSingleton();
+                }
+
+            }
+        }
+
+        return instance;
+    }
+
+    public void showMessage() {
+        System.out.println("Double Checked Singleton Instance");
+    }
+
 }
