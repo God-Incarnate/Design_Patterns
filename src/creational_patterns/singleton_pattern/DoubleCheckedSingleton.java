@@ -41,3 +41,29 @@ public class DoubleCheckedSingleton {
     }
 
 }
+
+/*
+Why volatile is Important?
+private static volatile DoubleCheckedSingleton instance;
+Without volatile, the JVM may reorder instructions, causing another thread to see a partially constructed object.
+
+Execution Flow
+Thread 1 → instance null → synchronized → create instance
+Thread 2 → instance not null → skip lock
+
+Result:
+        -----------------------------
+        Only first call synchronized
+        Better performance
+        When Used
+        -----------------------------
+
+Example use cases:::::::::::::::::::::
+
+Configuration managers
+
+Connection pool managers
+
+Caching services
+ */
+
