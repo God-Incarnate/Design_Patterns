@@ -344,4 +344,4 @@ MIT License — Feel free to use this for educational and commercial purposes.
 
 ## 👨‍💻 Author
 
-Created and maintained by **God-Incarnate**
+Created and maintained by [God-Incarnate](https://github.com/God-Incarnate)
