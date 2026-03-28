@@ -283,6 +283,46 @@ Design_Patterns/
 - **Implementation** – Practical, working code examples  
 
 ---
+## 🤝 Guidance, Improvements & Community Review
+
+### How to Get Guidance
+- **New to Design Patterns?** Check our `docs/` folder for detailed explanations
+- **Pattern Questions?** Open a [Discussion](../../discussions) or check the pattern's documentation
+- **Implementation Help?** Each pattern includes real-world examples
+
+### How to Suggest Improvements
+We welcome suggestions for:
+- Clearer code examples
+- Additional use cases
+- Better documentation
+- Performance optimizations
+- New architectural patterns
+
+**Submit improvements via:**
+1. GitHub Issues (for bug reports and enhancement requests)
+2. Pull Requests (for code changes)
+3. Discussions (for ideas and feedback)
+
+### Community Code Review
+Help us improve by:
+- Reviewing open [Pull Requests](../../pulls)
+- Testing implementations in your own projects
+- Sharing feedback on pattern clarity
+- Suggesting edge cases we should handle
+
+**Current Review Priorities:**
+- Pattern completeness and correctness
+- Documentation clarity
+- Real-world applicability
+- Code consistency across all patterns
+
+### Issue Labels
+- `guidance` - Questions and learning support
+- `improvement` - Enhancement suggestions
+- `review-needed` - Code awaiting community feedback
+- `documentation` - Doc updates and clarifications
+- `good-first-issue` - Perfect for new contributors
+---
 
 ## 🤝 Contributing
 
